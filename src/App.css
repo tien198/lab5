@@ -1,0 +1,34 @@
+:root {
+    --main-color: rgb(161, 14, 137);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#goal-form {
+    margin: 3rem;
+}
+
+#goals {
+    margin: 3rem auto;
+    max-width: 45rem;
+}
+
+.goal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.goal-item {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: .75rem 1.5rem;
+}
+
+.goal-item:hover {
+    cursor: pointer;
+    background-color: rgb(87, 8, 74);
+}

@@ -1,9 +1,9 @@
-import React, {
-	useState
-} from 'react';
+import React, { useState } from 'react';
 
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
+
+import './App.css';
 
 const App = () => {
 	const [courseGoals, setCourseGoals] = useState([{
@@ -49,7 +49,10 @@ const App = () => {
 	return (
 		<div>
 			<section id="goal-form" >
-				<CourseInput onAddGoal={addGoalHandler} /> </section> <section id="goals" > {content}
+				<CourseInput onAddGoal={addGoalHandler} />
+			</section>
+			<section id="goals" >
+				{content}
 			</section>
 		</div>
 	);
